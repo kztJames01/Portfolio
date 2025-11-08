@@ -1,2 +1,2 @@
-# MindGuide
-MindGuide is a AI-powered Therapy for all people
+# Updating my portfoilio
+will be live soon
