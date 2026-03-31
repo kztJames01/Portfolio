@@ -457,45 +457,40 @@ export default function Home() {
       {/* ── contact ── */}
       <AnimatedSection className="section section-contact" id="contact">
         <motion.h2 variants={fadeUp}>get in touch</motion.h2>
-        <motion.div className="contact-grid" variants={staggerContainer}>
-          {contacts.map((contact, i) => (
-            <motion.a
-              key={contact.label}
-              href={contact.href}
-              target={contact.type === "email" ? undefined : "_blank"}
-              rel={contact.type === "email" ? undefined : "noreferrer"}
-              className="contact-card"
-              variants={scaleIn}
-              custom={i}
-            >
-              <ContactIcon type={contact.type} />
-              <div>
-                <p>{contact.label}</p>
-                <span>{contact.value}</span>
-              </div>
-            </motion.a>
-          ))}
-        </motion.div>
-      </AnimatedSection>
-
-      {/* ── contact form ── */}
-      <AnimatedSection className="section section-contact-form" id="contact-form">
-        <motion.h2 variants={fadeUp}>send a message</motion.h2>
-        <motion.form
-          className="contact-form"
-          variants={fadeUp}
-          action="https://formsubmit.co/alphakzt99@gmail.com"
-          method="POST"
-        >
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_next" value="" />
-          <div className="form-row">
+        <motion.div className="contact-split" variants={fadeUp}>
+          <div className="contact-links">
+            {contacts.map((contact, i) => (
+              <motion.a
+                key={contact.label}
+                href={contact.href}
+                target={contact.type === "email" ? undefined : "_blank"}
+                rel={contact.type === "email" ? undefined : "noreferrer"}
+                className="contact-card"
+                variants={scaleIn}
+                custom={i}
+              >
+                <ContactIcon type={contact.type} />
+                <div>
+                  <p>{contact.label}</p>
+                  <span>{contact.value}</span>
+                </div>
+              </motion.a>
+            ))}
+          </div>
+          <div className="contact-separator" />
+          <form
+            className="contact-form"
+            action="https://formsubmit.co/alphakzt99@gmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="" />
             <input type="text" name="name" placeholder="your name" required />
             <input type="email" name="email" placeholder="your email" required />
-          </div>
-          <textarea name="message" placeholder="your message" rows="5" required />
-          <button type="submit" className="form-submit">send</button>
-        </motion.form>
+            <textarea name="message" placeholder="your message" rows="5" required />
+            <button type="submit" className="form-submit">send message</button>
+          </form>
+        </motion.div>
       </AnimatedSection>
     </>
   );
