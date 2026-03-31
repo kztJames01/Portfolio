@@ -125,9 +125,9 @@ const projects = [
 ];
 
 const contacts = [
-  { label: "email", value: "you@example.com", href: "mailto:you@example.com", type: "email" },
-  { label: "github", value: "github.com/your-username", href: "https://github.com/", type: "github" },
-  { label: "linkedin", value: "linkedin.com/in/your-handle", href: "https://linkedin.com/", type: "linkedin" }
+  { label: "email", value: "alphakzt99@gmail.com", href: "mailto:alphakzt99@gmail.com", type: "email" },
+  { label: "github", value: "github.com/kztJames01", href: "https://github.com/kztJames01", type: "github" },
+  { label: "linkedin", value: "linkedin.com/in/kztJames01", href: "https://linkedin.com/in/kztJames01", type: "linkedin" }
 ];
 
 /* ── hooks ── */
@@ -354,7 +354,7 @@ export default function Home() {
       />
 
       <header className="topbar">
-        <a href="#home" className="brand">kzt</a>
+        <a href="#home" className="brand"><img src="/logo.png" alt="kzt" className="brand-logo" /></a>
         <nav>
           <a href="#home">home</a>
           <a href="#experience">experience</a>
@@ -476,6 +476,26 @@ export default function Home() {
             </motion.a>
           ))}
         </motion.div>
+      </AnimatedSection>
+
+      {/* ── contact form ── */}
+      <AnimatedSection className="section section-contact-form" id="contact-form">
+        <motion.h2 variants={fadeUp}>send a message</motion.h2>
+        <motion.form
+          className="contact-form"
+          variants={fadeUp}
+          action="https://formsubmit.co/alphakzt99@gmail.com"
+          method="POST"
+        >
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="" />
+          <div className="form-row">
+            <input type="text" name="name" placeholder="your name" required />
+            <input type="email" name="email" placeholder="your email" required />
+          </div>
+          <textarea name="message" placeholder="your message" rows="5" required />
+          <button type="submit" className="form-submit">send</button>
+        </motion.form>
       </AnimatedSection>
     </>
   );
