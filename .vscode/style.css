@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width  {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.menu-btn{
+    display: none;
+}
+.navbar .max-width .logo a span{
+    color: #ffcb77;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 25px 0;
+    transition: all 0.3s ease-in;
+    font-family: 'Itim', cursive;
+}
+.navbar.sticky{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 20px 0;
+    background: #17c3b2;
+}
+.navbar .max-width{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 55px;
+    font-weight: 500;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: #fff;
+    font-size: 27px;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: #ffcb77;
+}
+
+/* home screen styling */
+
+.photo{
+    background-image: url("images/photo1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fef9ef;
+    display: flex;
+    height: 670px;
+}
+.home{
+    background: url("images/fern-918570_1920.jpg") no-repeat center;
+    position: flex;
+    width: 100%;
+    height: 900px;
+    padding: auto auto auto auto;
+}
+
+.home .max-width .home-content #text1{ 
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Itim', cursive;
+    padding-top: 190px;
+    padding-bottom: 50px;
+}
+.home .max-width .home-content #text2{
+    text-align: center;
+    width: 100%;
+    font-size: 100px;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Parisienne', cursive;
+    padding-bottom: 50px;
+}
+.home .max-width .home-content #text3{
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Itim', cursive;
+    padding-bottom: 130px;
+}
+.home .max-width .home-content #text3 span{
+    color:#ffcb77;
+    font-weight: 600;
+    font-size: 40px;
+}
+section{
+    background-color: #227c9d;
+    padding: 100px 0;
+}
+.about{
+    width: 100%;
+    font-family: 'Itim', cursive;
+}
+.about .name{
+    filter:drop-shadow(8px 8px 8px grey);
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fef9ef;
+    padding-bottom: 100px;
+}
+.about .name::before{
+    position: absolute;
+    content: "";
+    width: 160px;
+    height: 3px;
+    background-color:#fef9ef;
+}
+.about #para{
+    font-family: 'Oswald', sans-serif;
+    text-align: justify;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 30px;
+    color: #fef9ef;
+    font-weight: 400;
+}
+.about #para span{
+    color:#fe6d73;
+}
+.about #para a{
+    color: #fe6d73;
+}
+.ani{
+    align-self: center;
+    align-items: center;
+}
+.CV{
+    margin:200px 0 0 200px;
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    background-color: #fef9ef;
+    color: #fe6d73;
+    padding: 18px 35px;
+    border-radius: 6px;
+}
+.CV:hover{
+    color: #fef9ef;
+    background-color: #fe6d73;
+}
+.img{
+    position: relative;
+    margin-left: 750px;
+}
+@media (max-width: 1280px){
+    .img{
+        position: relative;
+        margin-left: 650px;
+    }
+}
+@media (max-width: 1024px){
+    .menu-btn{
+        display: none;
+    }
+    .max-width  {
+        padding: 0 60px;
+    }
+    .navbar{
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        padding: 15px 0;
+        transition: all 0.3s ease-in;
+        font-family: 'Itim', cursive;
+    }
+    .navbar.sticky{
+        padding: 10px 0;
+        background: #17c3b2;
+    }
+    .navbar .logo a{
+        color: #fff;
+        font-size: 45px;
+        font-weight: 500;
+    }
+    .navbar .menu li{
+        list-style: none;
+        display: inline-block;
+    }
+    .navbar .menu li a{
+        color: #fff;
+        font-size: 25px;
+        font-weight: 500;
+        margin-left: 15px;
+        transition: color 0.3s ease;
+    }
+    .navbar .menu li a:hover{
+        color: #ffcb77;
+    }
+    .home .max-width .home-content #text1{ 
+        text-align: center;
+        width: 100%;
+        font-size: 40px;
+        font-weight: 600;
+        color: #fff;
+        font-family: 'Itim', cursive;
+        padding-top: 190px;
+        padding-bottom: 50px;
+    }
+    .home .max-width .home-content #text2{
+        text-align: center;
+        width: 100%;
+        font-size: 80px;
+        font-weight: 600;
+        color: #fff;
+        font-family: 'Parisienne', cursive;
+        padding-bottom: 50px;
+    }
+    .home .max-width .home-content #text3{
+        text-align: center;
+        width: 100%;
+        font-size: 40px;
+        font-weight: 600;
+        color: #fff;
+        font-family: 'Itim', cursive;
+        padding-bottom: 70px;
+    }
+    .home .max-width .home-content #text3 span{
+        color:#ffcb77;
+        font-weight: 600;
+        font-size: 35px;
+    }
+    .CV{
+        margin:150px 0 0 170px;
+        position: absolute;
+        font-family: 'Oswald', sans-serif;
+        font-size: 30px;
+        background-color: #fef9ef;
+        color: #fe6d73;
+        padding: 13px 27px;
+        border-radius: 6px;
+    }
+    .CV:hover{
+        color: #fef9ef;
+        background-color: #fe6d73;
+    }
+    .img{
+        content: url("images/photo5.png");
+        position: relative;
+        margin-left: 500px;
+    }
+}
+@media screen and (max-width: 768px){
+    .home{
+        background: url("images/fern-918570_1920.jpg") no-repeat center;
+        position: relative;
+        width: 100%;
+        height: 900px;
+        padding: auto auto auto auto;
+    }
+    .max-width{
+        max-width: 763px;
+        padding: 0 50px;
+        margin: auto auto auto auto;
+    }
+    .photo{
+        background: url("images/photo2.jpg") no-repeat center;
+        display: flex;
+        height: 640px;
+    }
+    .menu-btn{
+        color: #fff;
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn:hover{
+        color: #ffcb77;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .logo a{
+        color: #fff;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .navbar .menu{
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+        position: fixed;
+        height: 100%;
+        width: 25%;
+        right: -100%;
+        top: 0;
+        background: #227c9d;
+        text-align: center;
+        overflow-x:hidden;
+        padding-top: 100px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        right: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 20px;
+        transition: all 0.3s ease-in;
+    }
+    .home .max-width .home-content #text1{ 
+        text-align: center;
+        width: 100%;
+        font-size: 40px;
+        font-weight: 600;
+        color: #fff;
+        font-family: 'Itim', cursive;
+        padding-top: 180px;
+        padding-bottom: 50px;
+    }
+    .home .max-width .home-content #text2{
+        text-align: center;
+        width: 100%;
+        font-size: 70px;
+        font-weight: 600;
+        color: #fff;
+        font-family: 'Parisienne', cursive;
+        padding-bottom: 50px;
+    }
+    .home .max-width .home-content #text3{
+        text-align: center;
+        width: 100%;
+        font-size: 40px;
+        font-weight: 600;
+        color: #fff;
+        font-family: 'Itim', cursive;
+        padding-bottom: 70px;
+    }
+    .home .max-width .home-content #text3 span{
+        color:#ffcb77;
+        font-weight: 600;
+        font-size: 40px;
+    }
+    .CV{
+        margin:120px 0 0 150px;
+        position: absolute;
+        font-size: 30px;
+        padding: 13px 27px;
+        border-radius: 6px;
+    }
+    .img{
+        content: url("images/photo4.png");
+        position: relative;
+        margin-left: 400px;
+    }
+}
+@media screen and (max-width: 479px){
+    .max-width  {
+        padding: 0 30px;
+        margin: auto;
+    }
+    .menu-btn{
+        color: #fff;
+        display: block;
+        z-index: 999;
+        padding: 7px 10px;
+        border-radius: 5px;
+        background-color: #227c9d;
+    }
+    .menu-btn:hover{
+        color: #ffcb77;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .logo a{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .navbar .menu{
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        position: fixed;
+        height: 100%;
+        width: 25%;
+        right: -50%;
+        top: 0;
+        background: #227c9d;
+        text-align: center;
+        overflow-x:hidden;
+        padding-top: 60px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        right: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 15px;
+        transition: all 0.3s ease-in;
+    }
+    .home{
+        background: url("images/fern-918570_1920.jpg") no-repeat center;
+        position: relative;
+        width: 100%;
+        height: 800px;
+        padding: auto auto auto auto;
+    }
+    .home .max-width .home-content #text1{ 
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+        font-family: 'Itim', cursive;
+        padding-top: 180px;
+        padding-bottom: 50px;
+    }
+    .home .max-width .home-content #text2{
+        text-align: center;
+        width: 100%;
+        font-size: 50px;
+        font-weight: 600;
+        color: #fff;
+        font-family: 'Parisienne', cursive;
+        padding-bottom: 50px;
+    }
+    .home .max-width .home-content #text3{
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+        font-family: 'Itim', cursive;
+        padding-bottom: 70px;
+    }
+    .home .max-width .home-content #text3 span{
+        color:#ffcb77;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .about #para{
+        font-family: 'Oswald', sans-serif;
+        text-align: justify;
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 20px;
+        color: #fef9ef;
+        font-weight: 400;
+    }
+    .CV{
+        position: relative;
+        margin: 20px 0 20px 105px;
+        font-size: 30px;
+        padding: 10px 20px;
+        border-radius: 6px;
+    }
+    .img{
+        content: url("images/photo4.png");
+        position: flex;
+        margin: 20px 0 20px 50px;
+    }
+}
+@media screen and (max-width:376px){
+    .CV{
+        position: relative;
+        margin: 20px 0 20px 95px;
+        font-size: 30px;
+        padding: 10px 20px;
+        border-radius: 6px;
+    }
+    .img{
+        content: url("images/photo4.png");
+        position: flex;
+        margin: 20px 0 20px 40px;
+    }
+}
