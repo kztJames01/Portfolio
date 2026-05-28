@@ -15,111 +15,75 @@ const stats = [
 
 const experiences = [
   {
-    role: "ai software developer",
-    company: "independent / contract",
-    period: "2024 - present",
-    summary: "building production ai workflows, retrieval systems, and agent-driven automation for real users."
+    role: "cxs-it student assistant",
+    company: "university of texas at arlington",
+    period: "jan 2025 - present",
+    bullets: [
+      "facilitated it service management by resolving software, hardware, and network connectivity issues.",
+      "coordinated it resource management and supported technology setups for events and classroom needs."
+    ]
   },
   {
-    role: "machine learning engineer",
-    company: "project collaboration",
-    period: "2023 - 2024",
-    summary: "designed model pipelines and shipped inference apis with monitoring and scale-ready architecture."
-  },
-  {
-    role: "full stack engineer",
-    company: "startup teams",
-    period: "2022 - 2023",
-    summary: "delivered web products across frontend and backend with reliability, performance, and fast iteration."
+    role: "backend development intern",
+    company: "the experts tribe",
+    period: "may 2025 - jul 2025",
+    bullets: [
+      "developed and maintained a full-stack consulting application using node.js and mongodb.",
+      "managed the development lifecycle including docker containerization and ci/cd pipeline integration."
+    ]
   }
 ];
 
 const skillRows = [
   [
     { name: "python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-    { name: "typescript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+    { name: "c++", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
+    { name: "javascript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+    { name: "dart", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" },
+    { name: "java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+    { name: "django", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" },
+  ],
+  [
     { name: "next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
     { name: "react", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-    { name: "node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-    { name: "fastapi", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
-  ],
-  [
-    { name: "postgresql", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
-    { name: "redis", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" },
-    { name: "docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
-    { name: "git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
-    { name: "tensorflow", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
-    { name: "mongodb", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
-  ],
-  [
-    { name: "aws", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
-    { name: "linux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" },
-    { name: "graphql", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" },
-    { name: "figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+    { name: "flutter", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" },
     { name: "tailwind", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" },
-    { name: "firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg" },
+    { name: "pytorch", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
+    { name: "node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+  ],
+  [
+    { name: "mongodb", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+    { name: "docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+    { name: "linux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" },
+    { name: "windows", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" },
+    { name: "git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+    { name: "dsa", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" },
   ]
 ];
 
 const projects = [
   {
-    title: "ai support copilot",
-    category: "llm + rag",
-    summary: "multi-source retrieval assistant with grounded answers, feedback loops, and escalation routing.",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
-    repo: "https://github.com/",
+    title: "haltchain",
+    category: "compliance infrastructure",
+    summary: "compliance control plane for agentic systems — policy enforcement, risk scoring, and signed audit evidence.",
+    image: "https://image.thum.io/get/width/600/crop/400/noanimate/https://haltchain.com",
+    live: "https://haltchain.com",
     techIcons: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-    ]
-  },
-  {
-    title: "saas analytics engine",
-    category: "data product",
-    summary: "event ingestion and dashboarding pipeline for product analytics, retention signals, and cohort insights.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-    repo: "https://github.com/",
-    techIcons: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
     ]
   },
   {
-    title: "baas orchestration console",
-    category: "developer platform",
-    summary: "control plane for auth, api keys, usage policy, and deployment status across service environments.",
-    image: "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?w=600&h=400&fit=crop",
-    repo: "https://github.com/",
+    title: "memo-log",
+    category: "developer tooling",
+    summary: "deterministic project memory — same repo state produces the same snapshot for grounded ai context.",
+    image: "https://image.thum.io/get/width/600/crop/400/noanimate/https://memo-log.netlify.app",
+    live: "https://memo-log.netlify.app/",
     techIcons: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
-    ]
-  },
-  {
-    title: "real-time chat platform",
-    category: "full stack",
-    summary: "websocket-powered messaging app with presence indicators, file sharing, and end-to-end encryption.",
-    image: "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?w=600&h=400&fit=crop",
-    repo: "https://github.com/",
-    techIcons: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-    ]
-  },
-  {
-    title: "ml pipeline dashboard",
-    category: "mlops",
-    summary: "end-to-end model training, versioning, and deployment dashboard with real-time metrics and alerts.",
-    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop",
-    repo: "https://github.com/",
-    techIcons: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
     ]
   }
 ];
@@ -264,11 +228,12 @@ function ProjectCarousel({ items }) {
         </button>
       </div>
       <div className="project-carousel-track" ref={trackRef}>
-        {items.map((project, i) => (
+        {items.map((project) => (
           <article key={project.title} className="project-card">
-            <div className="project-image">
+            <a href={project.live} target="_blank" rel="noreferrer" className="project-image">
               <img src={project.image} alt={project.title} />
-            </div>
+              <span className="project-live-badge">live preview</span>
+            </a>
             <div className="project-body">
               <p className="project-category">{project.category}</p>
               <h3>{project.title}</h3>
@@ -279,9 +244,9 @@ function ProjectCarousel({ items }) {
                     <img key={j} src={icon} alt="" width={22} height={22} />
                   ))}
                 </div>
-                <a href={project.repo} target="_blank" rel="noreferrer" className="source-btn">
-                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 3.5A8.5 8.5 0 0 0 3.5 12c0 3.76 2.44 6.95 5.82 8.08.43.08.58-.19.58-.41v-1.63c-2.37.51-2.87-1-2.87-1-.39-.99-.95-1.25-.95-1.25-.77-.53.06-.52.06-.52.86.06 1.31.87 1.31.87.75 1.29 1.98.92 2.47.7.08-.56.3-.93.54-1.14-1.89-.21-3.88-.95-3.88-4.24 0-.94.34-1.7.87-2.31-.08-.22-.38-1.09.09-2.28 0 0 .71-.23 2.33.88a8.1 8.1 0 0 1 4.24 0c1.63-1.11 2.34-.88 2.34-.88.46 1.19.17 2.06.09 2.28.54.61.87 1.37.87 2.31 0 3.29-2 4.03-3.89 4.24.31.27.58.8.58 1.62v2.39c0 .22.15.5.58.41A8.5 8.5 0 0 0 20.5 12 8.5 8.5 0 0 0 12 3.5Z"/></svg>
-                  source code
+                <a href={project.live} target="_blank" rel="noreferrer" className="source-btn">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+                  visit live
                 </a>
               </div>
             </div>
@@ -431,7 +396,11 @@ export default function Home() {
                 <p className="period">{item.period}</p>
                 <h3>{item.role}</h3>
                 <p className="company">{item.company}</p>
-                <p>{item.summary}</p>
+                <ul className="timeline-bullets">
+                  {item.bullets.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
               </div>
             </motion.article>
           ))}
