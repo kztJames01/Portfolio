@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Kaung Zaw Thant | AI Software Developer",
+  title: "Kaung Zaw Thant | Software Developer",
   description: "Portfolio website for Kaung Zaw Thant",
   icons: { icon: "/logo.png" }
 };
