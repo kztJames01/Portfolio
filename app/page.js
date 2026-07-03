@@ -78,7 +78,7 @@ const projects = [
 const contacts = [
   { label: "Email", value: "alphakzt99@gmail.com", href: "mailto:alphakzt99@gmail.com" },
   { label: "GitHub", value: "github.com/kztJames01", href: "https://github.com/kztJames01" },
-  { label: "LinkedIn", value: "linkedin.com/in/kztJames01", href: "https://linkedin.com/in/kztJames01" }
+  { label: "LinkedIn", value: "linkedin.com/in/kaung-zaw-thant-51b613261/", href: "https://www.linkedin.com/in/kaung-zaw-thant-51b613261/" }
 ];
 
 export default function Home() {
